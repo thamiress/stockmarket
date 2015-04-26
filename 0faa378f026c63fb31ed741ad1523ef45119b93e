@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_416c9135",
+        "filename": "order/OrderBook",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1004747
+      },
+      "writtenOn": "2015-04-26T07:17:54Z",
+      "side": 1,
+      "message": "Should move this above the method because it describes what the method does. Best to be a javadoc.",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 28,
+        "endChar": 16
+      },
+      "revId": "0faa378f026c63fb31ed741ad1523ef45119b93e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_018739d8",
+        "filename": "order/OrderBook",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 1004747
+      },
+      "writtenOn": "2015-04-26T07:17:54Z",
+      "side": 1,
+      "message": "Should remove this comment, as it does not add any description to the code. Instead it is just instructions that have already been completed.",
+      "range": {
+        "startLine": 53,
+        "startChar": 2,
+        "endLine": 62,
+        "endChar": 37
+      },
+      "revId": "0faa378f026c63fb31ed741ad1523ef45119b93e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_616f0d2c",
+        "filename": "order/OrderBook",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1004747
+      },
+      "writtenOn": "2015-04-26T07:17:54Z",
+      "side": 1,
+      "message": "Should rename this variable to be more descriptive.",
+      "range": {
+        "startLine": 83,
+        "startChar": 9,
+        "endLine": 83,
+        "endChar": 12
+      },
+      "revId": "0faa378f026c63fb31ed741ad1523ef45119b93e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
