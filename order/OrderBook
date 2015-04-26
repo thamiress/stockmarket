@@ -1,0 +1,176 @@
+package pkg.order;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.Set;
+
+import pkg.exception.StockMarketExpection;
+import pkg.market.Market;
+import pkg.trader.Trader;
+
+public class OrderBook {
+	Market market;
+	HashMap<String, ArrayList<Order>> buyOrders;
+	HashMap<String, ArrayList<Order>> sellOrders;
+
+	public OrderBook(Market m) {
+		this.market = m;
+		buyOrders = new HashMap<String, ArrayList<Order>>();
+		sellOrders = new HashMap<String, ArrayList<Order>>();
+	}
+	
+	// Populate the buyOrders and sellOrders data structures, whichever
+	// appropriate
+	public void addToOrderBook(Order order) {
+		
+		ArrayList<Order> array;
+		if (order.getOrderType() == OrderType.BUY) {
+			if (buyOrders.containsKey(order.getStockSymbol())) {
+				array = buyOrders.get(order.getStockSymbol());
+			} else {
+				array = new ArrayList<Order>();
+			}
+			
+			array.add(order);
+			buyOrders.put(order.getStockSymbol(), array);
+		} else {
+			if (sellOrders.containsKey(order.getStockSymbol())) {
+				array = sellOrders.get(order.getStockSymbol());
+			} else {
+				array = new ArrayList<Order>();
+			}
+			
+			array.add(order);
+			sellOrders.put(order.getStockSymbol(), array);
+		}
+	}
+
+	
+	public void trade() {
+		
+		Set set = buyOrders.entrySet();
+		Iterator itr = set.iterator();
+		
+		while (itr.hasNext()) {
+			Map.Entry me = (Map.Entry)itr.next();
+			
+			if (sellOrders.containsKey(me.getKey())) {
+				ArrayList<Order> buyArray = (ArrayList<Order>)me.getValue();
+				ArrayList<Order> sellArray = (ArrayList<Order>)sellOrders.get(me.getKey());
+				
+				Collections.sort(buyArray, Collections.reverseOrder());
+				Collections.sort(sellArray);
+				
+				LinkedList<Double> buyPrice = new LinkedList<Double>();
+				LinkedList<Integer> buyVol = new LinkedList<Integer>();
+				LinkedList<Double> sellPrice = new LinkedList<Double>();
+				LinkedList<Integer> sellVol = new LinkedList<Integer>();
+				
+				for (Order o : buyArray) {
+					int buyIndex = buyPrice.indexOf(o.getPrice());
+					if (buyIndex > -1) {
+						int val = buyVol.get(buyIndex);
+						buyVol.add(buyIndex, val + o.getSize());
+					} else {
+						buyPrice.add(o.getPrice());
+						buyVol.add(o.getSize());
+					}
+				}
+				
+				addFirstRemoveLast(buyPrice, buyVol);
+				
+				for (Order o : sellArray) {
+					int sellindex = sellPrice.indexOf(o.getPrice());
+					if (sellindex > -1) {
+						int val = sellVol.get(sellindex);
+						sellVol.add(sellindex, val + o.getSize());
+					} else {
+						sellPrice.add(o.getPrice());
+						sellVol.add(o.getSize());
+					}
+				}
+				
+				for (int i = 1; i < buyVol.size(); i++) {
+					int prev = buyVol.get(i-1);
+					int cur = buyVol.get(i);
+					buyVol.set(i, prev + cur);
+				}
+				
+				for (int i = 1; i < sellVol.size(); i++) {
+					int prev = sellVol.get(i-1);
+					int cur = sellVol.get(i);
+					sellVol.set(i, prev + cur);
+				}
+				
+				calculatePriceMatch(buyArray, sellArray, buyPrice, buyVol,
+						sellPrice, sellVol);
+			}
+		}
+		
+		
+	}
+
+	private void calculatePriceMatch(ArrayList<Order> buyArray,
+			ArrayList<Order> sellArray, LinkedList<Double> buyPrice,
+			LinkedList<Integer> buyVol, LinkedList<Double> sellPrice,
+			LinkedList<Integer> sellVol) {
+		double priceMatch = 0;
+		int volume = 0;
+		boolean found = false;
+		
+		for (int i = 0; i < sellPrice.size(); i++) {
+			int sellIndex = buyPrice.indexOf(sellPrice.get(i));
+			
+			if (sellIndex >= 0) {
+				if (found) {
+					int vol = Math.abs(sellVol.get(i) - buyVol.get(sellIndex));
+					if (vol < volume || vol == 0) {
+						priceMatch = sellPrice.get(i);
+						volume = vol;
+					}
+				} else {
+					found = true;
+					int vol = Math.abs(sellVol.get(i) - buyVol.get(sellIndex));
+					priceMatch = sellPrice.get(i);
+					volume = vol;
+				}
+			}
+		}
+		
+		
+		for (Order o : sellArray) {
+			if (o.getPrice() <= priceMatch) {
+				Trader trader = o.getTrader();
+				try {
+					trader.tradePerformed(o, priceMatch);
+				} catch (StockMarketExpection e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+		for (Order o : buyArray) {
+			if (o.getPrice() >= priceMatch || o.getPrice() == 0) {
+				Trader trader = o.getTrader();
+				try {
+					trader.tradePerformed(o, priceMatch);
+				} catch (StockMarketExpection e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	private void addFirstRemoveLast(LinkedList<Double> buyPrice,
+			LinkedList<Integer> buyVol) {
+		buyPrice.addFirst(0.0);
+		buyPrice.removeLast();
+		buyVol.addFirst(buyVol.getLast());
+		buyVol.removeLast();
+	}
+
+}
