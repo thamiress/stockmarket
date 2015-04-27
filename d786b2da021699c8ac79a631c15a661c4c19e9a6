@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_6e0b752a",
+        "filename": "market/Market.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 1004769
+      },
+      "writtenOn": "2015-04-27T13:23:26Z",
+      "side": 1,
+      "message": "There are a lot of methods in this project with the name add, or similar. Make this one more descriptive by changing the method name to addOrderToMarket.",
+      "range": {
+        "startLine": 96,
+        "startChar": 13,
+        "endLine": 96,
+        "endChar": 21
+      },
+      "revId": "d786b2da021699c8ac79a631c15a661c4c19e9a6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_ae01ed07",
+        "filename": "market/Market.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1004769
+      },
+      "writtenOn": "2015-04-27T13:23:26Z",
+      "side": 1,
+      "message": "There are a few methods with names similar to trade. Make this one more descriptive by changing to tradeInOrderBook or something similar.",
+      "range": {
+        "startLine": 108,
+        "startChar": 13,
+        "endLine": 108,
+        "endChar": 25
+      },
+      "revId": "d786b2da021699c8ac79a631c15a661c4c19e9a6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
