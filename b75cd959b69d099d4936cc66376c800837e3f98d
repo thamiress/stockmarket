@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_2e169d55",
+        "filename": "client/Clien",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1004769
+      },
+      "writtenOn": "2015-04-27T13:20:02Z",
+      "side": 1,
+      "message": "Change the name of the file to Client.java. You have a typo that just says Clien.java.",
+      "range": {
+        "startLine": 9,
+        "startChar": 13,
+        "endLine": 9,
+        "endChar": 19
+      },
+      "revId": "b75cd959b69d099d4936cc66376c800837e3f98d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
