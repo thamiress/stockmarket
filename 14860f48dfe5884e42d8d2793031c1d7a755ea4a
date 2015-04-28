@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_71407107",
+        "filename": "client/Client.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1004778
+      },
+      "writtenOn": "2015-04-28T15:17:50Z",
+      "side": 1,
+      "message": "Inconsistent with number of traders being created.",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 25,
+        "endChar": 22
+      },
+      "revId": "14860f48dfe5884e42d8d2793031c1d7a755ea4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_d1b96516",
+        "filename": "client/Client.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 1004778
+      },
+      "writtenOn": "2015-04-28T15:17:50Z",
+      "side": 1,
+      "message": "Useless TODO comment. Recommend deleting.",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 37
+      },
+      "revId": "14860f48dfe5884e42d8d2793031c1d7a755ea4a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
