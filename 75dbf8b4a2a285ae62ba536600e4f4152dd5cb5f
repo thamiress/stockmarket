@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_d167a5b5",
+        "filename": "order/OrderBook",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1004742
+      },
+      "writtenOn": "2015-04-28T15:25:53Z",
+      "side": 1,
+      "message": "This is a long method, necessary comment can promote readability,",
+      "revId": "75dbf8b4a2a285ae62ba536600e4f4152dd5cb5f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_f1ef41e7",
+        "filename": "order/OrderBook",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1004742
+      },
+      "writtenOn": "2015-04-28T15:25:53Z",
+      "side": 1,
+      "message": "This part can be extracted.",
+      "range": {
+        "startLine": 84,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 24
+      },
+      "revId": "75dbf8b4a2a285ae62ba536600e4f4152dd5cb5f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_5113b50c",
+        "filename": "order/OrderBook",
+        "patchSetId": 2
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1004742
+      },
+      "writtenOn": "2015-04-28T15:25:53Z",
+      "side": 1,
+      "message": "These parts can be extracted to avoid the long method.",
+      "range": {
+        "startLine": 116,
+        "startChar": 4,
+        "endLine": 156,
+        "endChar": 5
+      },
+      "revId": "75dbf8b4a2a285ae62ba536600e4f4152dd5cb5f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
