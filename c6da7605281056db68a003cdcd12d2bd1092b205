@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_71c991ab",
+        "filename": "market/MarketHistory.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004778
+      },
+      "writtenOn": "2015-04-28T15:16:08Z",
+      "side": 1,
+      "message": "Rename for improved readability.",
+      "range": {
+        "startLine": 16,
+        "startChar": 1,
+        "endLine": 16,
+        "endChar": 10
+      },
+      "revId": "c6da7605281056db68a003cdcd12d2bd1092b205",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
