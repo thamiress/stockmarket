@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_c03fc8b2",
+        "filename": "trader/Trader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1004771
+      },
+      "writtenOn": "2015-04-29T16:02:45Z",
+      "side": 1,
+      "message": "Some unnecessary comments. Maybe separate and put near the relevant lines of code.",
+      "range": {
+        "startLine": 59,
+        "startChar": 2,
+        "endLine": 70,
+        "endChar": 30
+      },
+      "revId": "dfe6031142177434b3f385fbcd2244f1302b693a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_c0ad08eb",
+        "filename": "trader/Trader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 1004771
+      },
+      "writtenOn": "2015-04-29T16:02:45Z",
+      "side": 1,
+      "message": "More descriptive variable names to know the difference between order and o.",
+      "range": {
+        "startLine": 118,
+        "startChar": 3,
+        "endLine": 120,
+        "endChar": 33
+      },
+      "revId": "dfe6031142177434b3f385fbcd2244f1302b693a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_0046004f",
+        "filename": "trader/Trader.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 1004771
+      },
+      "writtenOn": "2015-04-29T16:02:45Z",
+      "side": 1,
+      "message": "Some unnecessary comments. Maybe separate and put near the relevant lines of code.",
+      "range": {
+        "startLine": 159,
+        "startChar": 2,
+        "endLine": 166,
+        "endChar": 31
+      },
+      "revId": "dfe6031142177434b3f385fbcd2244f1302b693a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
