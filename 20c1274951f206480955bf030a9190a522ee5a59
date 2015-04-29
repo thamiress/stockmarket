@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_91eb6077",
+        "filename": "trader/Trader.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1004806
+      },
+      "writtenOn": "2015-04-29T21:45:28Z",
+      "side": 1,
+      "message": "Comment is redundant. Method name already makes it clear",
+      "range": {
+        "startLine": 92,
+        "startChar": 2,
+        "endLine": 92,
+        "endChar": 68
+      },
+      "revId": "20c1274951f206480955bf030a9190a522ee5a59",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
