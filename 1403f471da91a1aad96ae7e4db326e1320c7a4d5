@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_d6eca9bd",
+        "filename": "trader/Trader.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 1004742
+      },
+      "writtenOn": "2015-04-30T03:12:47Z",
+      "side": 1,
+      "message": "Long method, some parts can be extracted.",
+      "range": {
+        "startLine": 132,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 32
+      },
+      "revId": "1403f471da91a1aad96ae7e4db326e1320c7a4d5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
