@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_39dfee0e",
+        "filename": "order/OrderBook",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1004794
+      },
+      "writtenOn": "2015-04-30T04:31:06Z",
+      "side": 1,
+      "message": "Rename this variable \"market\" to reflect the object type.",
+      "range": {
+        "startLine": 16,
+        "startChar": 1,
+        "endLine": 16,
+        "endChar": 9
+      },
+      "revId": "8a0153d51e929d6e3640470bdb76a97737e0d6c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a106d94_99cf0256",
+        "filename": "order/OrderBook",
+        "patchSetId": 3
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 1004794
+      },
+      "writtenOn": "2015-04-30T04:31:06Z",
+      "side": 1,
+      "message": "Does this line need to be here? This method shouldn\u0027t be producing new lines as far as I know.",
+      "range": {
+        "startLine": 114,
+        "startChar": 2,
+        "endLine": 114,
+        "endChar": 23
+      },
+      "revId": "8a0153d51e929d6e3640470bdb76a97737e0d6c5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
