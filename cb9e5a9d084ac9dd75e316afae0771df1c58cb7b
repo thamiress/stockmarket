@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_32b1c047",
+        "filename": "market/Market.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1004806
+      },
+      "writtenOn": "2015-04-30T18:24:19Z",
+      "side": 1,
+      "message": "Indentation on this part seems confusing and unnecessary.",
+      "revId": "cb9e5a9d084ac9dd75e316afae0771df1c58cb7b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
