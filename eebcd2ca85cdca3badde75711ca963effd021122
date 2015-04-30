@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a106d94_72b7b83a",
+        "filename": "trader/Trader.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1004806
+      },
+      "writtenOn": "2015-04-30T18:24:11Z",
+      "side": 1,
+      "message": "Unclear variable name? Please add a comment or change the name.",
+      "range": {
+        "startLine": 156,
+        "startChar": 3,
+        "endLine": 156,
+        "endChar": 15
+      },
+      "revId": "eebcd2ca85cdca3badde75711ca963effd021122",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
